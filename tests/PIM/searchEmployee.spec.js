@@ -18,7 +18,7 @@ test('Search Employee', async ({ page }) => {
     let searchEmployee = new SearchEmployee(page)
     let employeeData = new Pim(page)
     await employeeData.pimTab()
-    await searchEmployee.searchEmployee(empData)
+    await searchEmployee.searchEmployee(empData[0])
 
 })
 
