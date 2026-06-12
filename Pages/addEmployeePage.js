@@ -24,8 +24,6 @@ export class Pim {
 
     async employeesData(employeeData) {
         let randomNumber = generateRandomNumber()
-        // await this.profilePictureField.click()
-        // await this.profilePictureField.setInputFile('test_data/image_0.jpg')
         await this.employeeFirstNameField.fill(employeeData.employee.firstName)
         await this.employeeMiddleNameField.fill(employeeData.employee.middleName)
         await this.employeeLastNameField.fill(employeeData.employee.lastName)

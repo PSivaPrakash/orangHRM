@@ -15,9 +15,7 @@ test.beforeEach('Login to OrangeHRM', async ({page}) => {
 
 test('Create an Employee', async ({page}) => {
     test.slow()
-    // await page.pause()
     let employeeData = new Pim(page)
-    await page.pause()
     await employeeData.pimTab()
     await employeeData.initiateNewEmployee()
     await employeeData.employeesData(empData[0])

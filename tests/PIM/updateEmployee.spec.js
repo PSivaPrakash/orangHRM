@@ -18,7 +18,6 @@ test('Updating an Employee', async ({page}) => {
     let searchEmployee = new SearchEmployee(page)
     let employeeData = new Pim(page)
     let updateEmployee = new UpdateEmployee(page)
-    await page.pause()
     await employeeData.pimTab()
     await searchEmployee.searchEmployee(empData[0])
     await updateEmployee.initiateUpdateEmployee()
